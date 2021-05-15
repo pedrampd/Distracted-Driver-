@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<title>عنوان</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
+<style>
+
+body {
+  margin: 0;
+  font-family: Vazir
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #000080;
+  color: white;
+  font-size: 20px;
+}
+
+.content {
+padding-top:50px;
+
+}
+.video {
+margin: auto;
+display: block
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>عنوان</h1>
+
+</div>
+
+<div class="content">
+<img class="video" src="{% url 'webcam_feed' %}" />
+</div>
+
+</body>
+</html>

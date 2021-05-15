@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Live Stream</title>
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+</head>
+
+<body>
+    <h1 class="header">Video Live Stream</h1>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="{% url 'webcam_feed' %}" class="image">
+        {% comment %} </div>
+        <div class="data-container">
+            <ul>
+                <li>{{angle}}</li>
+                <li>data2</li>
+                <li>data3</li>
+                <li>data4</li>
+            </ul>
+        </div> {% endcomment %}
+    </div>
+</body>
+
+</html>
